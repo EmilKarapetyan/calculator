@@ -117,13 +117,7 @@ std::string Convert::to_postfix(const std::string& in)
 		}
 		else if (is_par(in[i]))
 		{
-			// in the rigth side of ')' bracket must be operator or bracket
-			// in the ledt side of ')' bracket must be operand or bracket
-			//is cannot be the first element of expression
-			//
-			// in the rigth side of '(' bracket must be operator or bracket
-			// in the ledt side of ')' bracket must be operand or bracket
-			//is cannot be the first element of expression
+
 			
 			if (in[i] == ')' && ((i == in.size() - 1 && (is_par(in[i - 1]) || is_operand(in[i - 1]))) || (i > 0 && i < in.size() - 1 && ((is_par(in[i - 1]) || is_operand(in[i - 1])) && ( is_operator(in[i + 1]) || is_par(in[i + 1]))))))
 			{
