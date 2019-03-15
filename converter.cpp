@@ -1,6 +1,3 @@
-#include<iostream>
-#include<fstream>
-#include<assert.h>
 #include"converter.h"
 
 double Convert::eval_postfix(const std::string& in)
